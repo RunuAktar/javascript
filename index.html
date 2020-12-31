@@ -6,6 +6,254 @@
 <style type="text/css">
 </style></head>
 <body>
+	<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<!--another-->
+<h2>javaScript can change HTML content.</h2>
+
+<p id="demo1">My name is Fatima Runu</p>
+
+<button type="button" onclick='document.getElementById("demo1").innerHTML = "01705749885"'>Click Me!</button>
+
+<!----JavaScript can change HTML attribute values.---->
+
+	<h2>JavaScript can change HTML attribute values.</h2>
+
+<div class="row justify-content-center">
+	
+<button onclick="document.getElementById('myImage').src='images/on.jpg'">Turn on the light</button>
+<img id="myImage" src="images/off.jpg" style="width: 100px;">
+
+<button onclick="document.getElementById('myImage').src='images/off.jpg'">Turn off the light</button>	
+</div>
+<!--another-->
+<h2>JavaScript can change the style of an HTML element.</h2>
+
+<p id="demo2">I am a freelancer</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+<!--JavaScript can hide HTML elements.-->
+<h2>JavaScript can hide HTML elements.</h2>
+<p id="demo3">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+<h2> js output using innerHTML</h2>
+<p>My roll no.</p>
+
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML = 9 + 6;
+</script>
+
+
+<h2>js output using document.write()</h2>
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.The document.write() method should only be used for testing.Using document.write() after an HTML document is loaded, will delete all existing HTML:</p>
+<p>My age</p>
+<script>
+document.write(50 +50 );
+</script>
+
+
+<h2>js output Using window.alert()</h2>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+window.alert('forbidden site');
+window.alert(400+ 5);
+</script>
+
+
+<h2>js output Using alert()</h2>
+
+<p>my projects</p>
+
+<script>
+alert(10 + 10);
+</script>
+
+
+<h2>js output Using console.log()</h2>
+<h1>Activate Debugging</h1>
+
+<p>F12 on your keybord will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+
+
+
+
+
+<h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+
+<h2>JavaScript Statements ,which are separated by semicolons.</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo5"></p>
+
+<script>
+var x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("demo5").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>In HTML, JavaScript statements are executed by the browser.</p>
+
+<p id="demo6"></p>
+
+<script>
+document.getElementById("demo6").innerHTML = "Hello Dolly.";
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>Multiple statements on one line is allowed.</p>
+
+<p id="demo7"></p>
+
+<script>
+var a, b, c;
+a = 5; b = 6; c = a + b;
+document.getElementById("demo7").innerHTML = c;
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>
+The best place to break a code line is after an operator or a comma.
+</p>
+
+<p id="demo8"></p>
+
+<script>
+document.getElementById("demo8").innerHTML =
+"Hello Dolly!";
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo9"></p>
+<p id="demo10"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo9").innerHTML = "Hello Dolly!";
+  document.getElementById("demo10").innerHTML = "How are you?";
+}
+</script>
+<h2>JavaScript Literals-JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo11"></p>
+
+<script>
+document.getElementById("demo11").innerHTML = 10.50;
+</script>
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo12"></p>
+
+<script>
+document.getElementById("demo12").innerHTML = 'John Doe';
+</script>
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 6:</p>
+
+<p id="demo13"></p>
+
+<script>
+var x;
+x = 6;
+document.getElementById("demo13").innerHTML = x;
+</script>
+<h2>JavaScript Operators</h2>
+
+<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+<p id="demo14"></p>
+
+<script>
+document.getElementById("demo14").innerHTML = (5 + 6) * 10;
+</script>
+<h2>Assigning JavaScript Values</h2>
+
+<p>In JavaScript the = operator is used to assign values to variables.</p>
+
+<p id="demo15"></p>
+
+<script>
+var x, y;
+x = 55;
+y = 66;
+document.getElementById("demo15").innerHTML = x + y;
+</script>
+
+<h2></h2>
+
+
+
+
+<h2></h2>
+
+
+
+<h2>JavaScript Function</h2>
+
+<p>This example shows the syntax of a function, without the use of arrow function syntax.</p>
+
+<p id="demo16"></p>
+
+<script>
+var hello;
+
+hello = function() {
+  return "Hello World!";
+}
+
+document.getElementById("demo16").innerHTML = hello();
+</script>
+
+<style>
+	h2{background-color: blue;color: white;text-align: center;}
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     <h2 style="color: green; text-align: center;background-color: blue;color: white;"><u>JavaScript</u></h2>
 
 	<p id="First"></p>
@@ -151,10 +399,7 @@
 <style>
 	h1{background: blue;
 		color: white;}
-h2{{background: #E71F00;
-		color: white;}
 
-}
-
-		#E71F00
+h2{background-color: blue;color: white;text-align: center;}
+		
 </style>
