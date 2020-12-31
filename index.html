@@ -217,11 +217,229 @@ document.getElementById("demo15").innerHTML = x + y;
 </script>
 
 <h2></h2>
+<h2>JavaScript Comments</h2>
+
+<h1 id="myH"></h1>
+
+<p id="myP"></p>
+
+<script>
+/*
+document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+document.getElementById("myP").innerHTML = "This is my first paragraph.";
+*/
+document.getElementById("myP").innerHTML = "The comment-block is not executed.";
+</script>
+<h2>JavaScript Variables</h2>
+
+<p>You can declare many variables in one statement.</p>
+
+<p id="demo17"></p>
+
+<script>
+var person = "John Doe",
+carName = "Volvo",
+price = 200;
+document.getElementById("demo17").innerHTML = carName;
+</script>
+<h2>JavaScript Operators</h2>
+
+<p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+
+<p id="demo18"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+document.getElementById("demo18").innerHTML = z;
+</script>
+
+<h2>JavaScript Arithmetic</h2>
+<p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+<p id="demo19"></p>
+
+<script>
+var a = 3;
+var x = (100 + 50) * a;
+document.getElementById("demo19").innerHTML = x;
+</script>
+<h2>JavaScriptAssignment Examples </h2>
+
+
+<h3>The = Operator</h3>
+
+<p id="demo20"></p>
+
+<script>
+var x = 10;
+document.getElementById("demo20").innerHTML = x;
+</script>
+<h2>JavaScript Strings</h2>
+
+<p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+<p id="demo21"></p>
+
+<script>
+
+var carName1 = "Volvo XC60"; // Double quotes
+var carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo21").innerHTML =
+carName1 + " " + carName2; 
+
+</script>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+
+<p id="demo22"></p>
+
+<script>
+var x = 123e5;
+var y = 123e-5;
+document.getElementById("demo22").innerHTML = x + "<br>" + y;
+</script>
+<h2>JavaScript Arrays</h2>
+
+<p id="demo23"></p>
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo23").innerHTML = cars;
+</script>
+<h2>JavaScript new Date()</h2>
+
+<p id="demo24"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo24").innerHTML = d;
+</script>
+<h2>JavaScript String Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo25"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+document.getElementById("demo25").innerHTML = sln;
+</script>
+
+<h2>JavaScript Arrow Function</h2>
+
+<p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+
+<p id="demo26"></p>
+
+<script>
+var hello;
+
+hello = () => {
+  return "Hello World!";
+}
+
+document.getElementById("demo26").innerHTML = hello();
+</script>
+
+<p>Display the value of Boolean(10 > 9):</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo27"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo27").innerHTML = Boolean(10 > 9);
+}
+</script>
+
+
+<h2>JavaScript comparison</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo28"></p>
+
+<script>
+function myFunction() {
+  var age, voteable;
+  age = document.getElementById("age").value;
+  voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo28").innerHTML = voteable + " to vote.";
+}
+</script>
+<h2>JavaScript Comparisons</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo33"></p>
+
+<script>
+function myFunction() {
+  var age, voteable;
+  age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Input is not a number";
+  } else {
+    voteable = (age < 18) ? "Too young" : "Old enough";
+  }
+  document.getElementById("demo33").innerHTML = voteable;
+}
+</script>
+
+<h2>JavaScript Conditional Statements</h2>
+<p>Click the button to display a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo29"></p>
+
+<script>
+function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 18) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  document.getElementById("demo29").innerHTML = greeting;
+}
+</script>
+<h2>JavaScript Arrow Function</h2>
+
+<p>This example shows that if you have only one parameter in an Arrow Function, you can skip the parentheses.</p>
+
+<p id="demo30"></p>
+
+<script>
+var hello;
+
+hello = val => "Hello " + val;
+
+document.getElementById("demo30").innerHTML = hello("Universe!");
+</script>
 
 
 
 
-<h2></h2>
+
+
+
 
 
 
