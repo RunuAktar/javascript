@@ -475,5 +475,156 @@ document.getElementById("demo16").innerHTML = hello();
 <style>
 	h2{background-color: blue;color: white;text-align: center;font-style: italic;}
 	</style>
+	<h2>JavaScript Arrow Function</h2>
+<p>This example shows that if you have only one parameter in an Arrow Function, you can skip the parentheses.</p>
+
+<p id="demo30"></p>
+
+<script>
+var hello;
+
+hello = val => "Hello " + val;
+
+document.getElementById("demo30").innerHTML = hello("Universe!");
+</script>
+
+<h2>JavaScript Switch Statement</h2>
+<p id="demo31"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo31").innerHTML = "Today is " + day;
+</script>
+
+
+
+
+
+
+<h2>JavaScript Function</h2>
+
+<p>This example shows the syntax of a function, without the use of arrow function syntax.</p>
+
+<p id="demo16"></p>
+
+<script>
+var hello;
+
+hello = function() {
+  return "Hello World!";
+}
+
+document.getElementById("demo16").innerHTML = hello();
+</script>
+
+<style>
+	h2{background-color: blue;color: white;text-align: center;font-style: italic;}
+	</style>
+
+
+<h2>JavaScript For/Of Loop</h2>
+
+<p>The for/of statement loops through the values of an iterable object.</p>
+
+<script>
+var cars = ["BMW", "Volvo", "Mini"];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
+</script>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo32"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo32").innerHTML = text;
+</script>
+
+<h2>JavaScript Do/While Loop</h2>
+
+<p id="demo35"></p>
+
+<script>
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo35").innerHTML = text;
+</script>
+<h2>JavaScript break</h2>
+
+<p id="demo34"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+
+list: {
+  text += cars[0] + "<br>"; 
+  text += cars[1] + "<br>"; 
+  break list;
+  text += cars[2] + "<br>"; 
+  text += cars[3] + "<br>"; 
+}
+
+document.getElementById("demo34").innerHTML = text;
+</script>
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo36"></p>
+
+<script>
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+var myFather = new Person("John", "Doe", 50, "blue");
+
+// Display age
+document.getElementById("demo36").innerHTML =
+"My father is " + myFather.age + "."; 
+</script>
+
 </body>
 </html> 
